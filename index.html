@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body class="body">
+  <div>
+    <div class="header">
+      <div class="top-text">
+        <h1 id="Dashboard">Social Media Dashboard</h1>
+        <p class="followers">Total followers: 23,004</p>
+      </div>
+      <div class="mobile">
+        <p class="mode-text">Dark Mode</p>
+      <label class="switch">
+        <input type="checkbox" checked="true" class="toggle" onchange="toggleDarkMode()">
+        <span class="slider"></span>
+      </label>
+      </div> 
+    </div>
+    <div class="body-content">
+      <template id="card">
+        <div class="cont" id="container">
+          <div class="card-top"></div>
+            <img class="logo">
+            <h1 class="name"></h1>
+            <p class="number"></p>
+            <span class="text">Subscribers</span>
+            <div class="rating">
+              <img class="up-logo">
+              <h1 class="up-down"></h1>  
+            </div>
+        </div>
+      </template>
+    </div>
+    <div class="lower-body">
+      <h1 class="overview">Overview - Today</h1>
+      <div class="lower-body-cards">
+        <template id="low-body">
+          <div class="card">
+            <h1 class="desc"></h1>
+            <img src="assets/icon-facebook.svg" class="bottom-logo">
+            <h1 class="num"></h1>
+            <div class="bottom-rating">
+              <img class="up-logo-bottom">
+              <h1 class="up-down-bottom"></h1>  
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
